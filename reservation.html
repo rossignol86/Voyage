@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Tourisme - RESERVATION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+  
+
+  <link rel="stylesheet" href="css/importation.css">
+  <link rel="stylesheet" href="css/destinations.css">
+  <link rel="stylesheet" href="css/reservation.css">
+</head>
+
+<body>
+
+  <header>
+
+    <input type="checkbox" id="burger-toggle" />
+    <label for="burger-toggle" class="burger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+
+    <nav class="menu">
+      <ul>
+        <li>Accueil</li>
+        <li> <a href="destinations.html">Destinations</a> 
+          <ul>
+            <li> <a>Europe</a>
+              <ul>
+                <li> <a href="continents/europe/france.html">France</a> </li>
+                <li> <a href="continents/europe/espagne.html">Espagne</a> </li>
+                <li> <a href="continents/europe/italie.html">Italie</a> </li>
+              </ul>
+            </li>
+            <li><a href="/asie.html">Asie</a>
+              <ul>
+                <li><a href="continents/asie/japon.html">Japon</a></li>
+                <li><a href="continents/asie/thailand.html">Thaïlande</a></li>
+                <li><a href="continents/asie/vietnam.html">Vietnam</a></li>
+              </ul>
+            </li>
+            <li><a href="/ameriques.html">Amériques</a>
+              <ul>
+                <li><a href="continents/amerique/usa.html">États-Unis</a></li>
+                <li><a href="continents/amerique/usa.html">Brésil</a></li>
+                <li><a href="continents/amerique/usa.html">Argentine</a></li>
+              </ul>
+            </li>
+            <li>Afrique
+              <ul>
+                <li>Maroc</li>
+                <li>Afrique du Sud</li>
+                <li>Égypte</li>
+              </ul>
+            </li>
+            <li>Îles
+              <ul>
+                <li>Tahiti</li>
+                <li>Maldives</li>
+                <li>Réunion</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>A la une</li>
+        <li>Contact</li>
+        <li>Qui sommes-nous ?</li>
+        <li>Connexion</li>
+        <li>Inscription</li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <!-- bloc photo et titre -->
+    <div>
+      <img class="imagescover" src="continents/photos/airport-6553696_1920.jpg" alt="photo d'un aeroport'">
+      <div>
+        <h1>Formulaire de réservation</h1>
+      </div>  
+    </div>
+
+    <form class="form-container" action="" method="post">
+
+      <label for="dateDepart">Date de départ :</label>
+      <input type="date" id="dateDepart" name="dateDepart" required>
+
+      <label for="dateRetour">Date de retour :</label>
+      <input type="date" id="dateRetour" name="dateRetour" required>
+    
+      <label for="compagnie">Compagnie aérienne :</label>
+      <select id="compagnie" name="compagnie" required>
+        <option value="">-- Choisissez une compagnie --</option>
+        <option value="Air France">Air France</option>
+        <option value="EasyJet">EasyJet</option>
+        <option value="Lufthansa">Lufthansa</option>
+        <option value="Qatar Airways">Qatar Airways</option>
+      </select>
+    
+      <label for="typeVoyage">Type de voyage :</label>
+      <select id="typeVoyage" name="typeVoyage" required>
+        <option value="">-- Choisissez un type --</option>
+        <option value="Loisirs">Loisirs</option>
+        <option value="Professionnel">Professionnel</option>
+        <option value="Sportif">Sportif</option>
+        <option value="Famille">Famille</option>
+        <option value="Scolaire">Scolaire</option>
+      </select>
+    
+      <label for="hotel">Hôtel :</label>
+      <select id="hotel" name="hotel" required>
+        <option value="">-- Choisissez un hôtel --</option>
+        <option value="Hôtel du Soleil">Hôtel du Soleil</option>
+        <option value="Palace Grand">Palace Grand</option>
+        <option value="Aqua Resort">Aqua Resort</option>
+        <option value="Business Inn">Business Inn</option>
+      </select>
+
+      <label for="entreprise">Entreprise :</label>
+      <input type="text" id="entreprise" name="entreprise" placeholder="Entreprise">
+
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" placeholder="Nom">
+
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" name="prenom" placeholder="Prenom" required>
+
+      <label for="password">Mot de passe :</label>
+      <input type="password" id="password" name="password" placeholder="XXXXXXXXXXXXX" > 
+    
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" placeholder="toto@exemple.com" required>
+    
+      <label for="telephone">Téléphone :</label>
+      <input type="tel" id="telephone" name="telephone" required placeholder="00 00 00 00 00">
+
+    </form>
+
+  </main>
+
+  <footer class="footer">
+    <div>
+        <p>Formation Développeur Web et Web Mobile - AFPA 2025 - Image, illustration PIXABAY</p>
+    </div>
+    <div class="blocsite">
+        <a class="textesite" href="https://rossignolfranck.alwaysdata.net/portfolio/" target="_blank">Franck Rossignol - Consulter mon site</a>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
+
+
