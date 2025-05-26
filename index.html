@@ -12,8 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
   
 
-  <link rel="stylesheet" href="css/importation.css">
-  <link rel="stylesheet" href="css/destinations.css">
+  <link rel="stylesheet" href="assets/css/importation.css">
+  <link rel="stylesheet" href="assets/css/destinations.css">
+    <link rel="icon" href="/favicon.ico">
+
 </head>
 
 <body>
@@ -31,13 +33,43 @@
     <nav class="menu">
       <ul>
         <li>Accueil</li>
-        <li> <a href="index.html">Destinations</a> 
+        <li> <a href="/index.html">Destinations</a> 
           <ul>
-            <li><a href="europe.html">Europe</a></li>
-            <li><a href="asie.html">Asie</a></li>
-            <li><a href="ameriques.html">Amériques</a></li>
-            <li>Afrique</li>
-            <li>Îles</li>
+            <li> <a href="assets/pages/europe.html">Europe</a>
+              <ul>
+                <li> <a href="assets/pages/france.html">France</a> </li>
+                <li> <a href="assets/pages/espagne.html">Espagne</a> </li>
+                <li> <a href="assets/pages/italie.html">Italie</a> </li>
+              </ul>
+            </li>
+            <li><a href="assets/pages/asie.html">Asie</a>
+              <ul>
+                <li><a href="assets/pages/japon.html">Japon</a></li>
+                <li><a href="assets/pages/thailand.html">Thaïlande</a></li>
+                <li><a href="assets/pages/vietnam.html">Vietnam</a></li>
+              </ul>
+            </li>
+            <li><a href="assets/pages/ameriques.html">Amériques</a>
+              <ul>
+                <li><a href="assets/pages/usa.html">États-Unis</a></li>
+                <li><a href="assets/pages/bresil.html">Brésil</a></li>
+                <li><a href="assets/pages/argentine.html">Argentine</a></li>
+              </ul>
+            </li>
+            <li>Afrique
+              <!-- <ul>
+                <li>Maroc</li>
+                <li>Afrique du Sud</li>
+                <li>Égypte</li>
+              </ul> -->
+            </li>
+            <li>Îles
+              <!-- <ul>
+                <li>Tahiti</li>
+                <li>Maldives</li>
+                <li>Réunion</li>
+              </ul> -->
+            </li>
           </ul>
         </li>
         <li>A la une</li>
@@ -47,14 +79,14 @@
         <li>Inscription</li>
       </ul>
     </nav>
-
+    
   </header>
 
   <main>
 
     <!-- bloc photo et titre -->
     <div>
-      <img class="imagescover" src="continents/photos/beach-8649692_1920.jpg" alt="Superbe photo de plusieurs continents">
+      <img class="imagescover" src="assets/images/continents/photos/beach-8649692_1920.jpg" alt="Superbe photo de plusieurs continents">
       <div>
         <h1>Choisissez la destination de votre rêve !</h1>
       </div>  
@@ -64,31 +96,31 @@
     <section class="destinations">
 
       <div class="destination-card">
-        <img src="continents/europe/photos/europe/prague-3010407_640.jpg" alt="Superbe photo de le ville de Pragues">
+        <img src="assets/images/continents/europe/photos/europe/prague-3010407_640.jpg" alt="Superbe photo de le ville de Pragues">
         <h2 class="titrecontinents">Europe</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam tenetur sapiente eaque asperiores quae excepturi consequuntur libero in autem?</p>
         <div class="button">
-          <a class="textebutton" target="_parent" href="europe.html">En savoir plus</a>
+          <a class="textebutton" target="_parent" href="assets/pages/europe.html">En savoir plus</a>
         </div>  
       </div>
       <div class="destination-card">
-        <img src="continents/photos/heritage-5430081_640.jpg" alt="Superbe photo d'Asie avec un temple">
+        <img src="assets/images/continents/photos/heritage-5430081_640.jpg" alt="Superbe photo d'Asie avec un temple">
         <h2 class="titrecontinents">Asie</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam tenetur sapiente eaque asperiores quae excepturi consequuntur libero in autem?</p>
         <div  class="button">
-          <a class="textebutton" target="_parent" href="asie.html">En savoir plus</a>
+          <a class="textebutton" target="_parent" href="assets/pages/asie.html">En savoir plus</a>
         </div>
       </div> 
       <div class="destination-card">
-        <img src="pages/usa/monument-valley-5499156_640.jpg" alt="Superbe photo du plus grand désert des Etats-Unis">
+        <img src="assets/images/usa/monument-valley-5499156_640.jpg" alt="Superbe photo du plus grand désert des Etats-Unis">
         <h2 class="titrecontinents">Amériques</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam tenetur sapiente eaque asperiores quae excepturi consequuntur libero in autem?</p>
         <div class="button">
-          <a class="textebutton" target="_parent" href="ameriques.html">En savoir plus</a>
+          <a class="textebutton" target="_parent" href="assets/pages/ameriques.html">En savoir plus</a>
         </div>  
       </div>
       <div class="destination-card">
-        <img src="continents/afrique/photos/elephants-1092508_640.jpg" alt="Superbe photo d'un safari photo avec des éléphants">
+        <img src="assets/images/continents/afrique/photos/elephants-1092508_640.jpg" alt="Superbe photo d'un safari photo avec des éléphants">
         <h2 class="titrecontinents">Afrique</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam tenetur sapiente eaque asperiores quae excepturi consequuntur libero in autem?</p>
         <div class="button">
@@ -96,7 +128,7 @@
         </div>  
       </div>
       <div class="destination-card">
-        <img src="continents/iles/photos/island-2056892_640.jpg" alt="Superbe photo d'une ile en Island'">
+        <img src="assets/images/continents/iles/photos/island-2056892_640.jpg" alt="Superbe photo d'une ile en Island'">
         <h2 class="titrecontinents">Iles paradisiaques</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam tenetur sapiente eaque asperiores quae excepturi consequuntur libero in autem?</p>
         <div class="button">
@@ -104,7 +136,7 @@
         </div>  
       </div>
       <div class="destination-card">
-        <img src="continents/australie/sydney-opera-house-354375_640.jpg" alt="Superbe photo d'une ile en Island'">
+        <img src="assets/images/continents/australie/sydney-opera-house-354375_640.jpg" alt="Superbe photo d'une ile en Island'">
         <h2 class="titrecontinents">Australie</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro nam tenetur sapiente eaque asperiores quae excepturi consequuntur libero in autem?</p>
         <div class="button">
